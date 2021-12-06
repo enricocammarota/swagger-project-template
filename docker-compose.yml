@@ -1,0 +1,9 @@
+version: '3.3'
+
+services:
+  swagger-project-template:
+    build: .
+    restart: always
+    image: local/swagger-project-template:latest
+    ports:
+      - "8801:8801"

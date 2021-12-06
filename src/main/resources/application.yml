@@ -1,0 +1,25 @@
+server:
+  port: 8801
+spring:
+  application:
+    name: swagger_project_template
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  info:
+    git:
+      mode: full
+  health:
+    binders:
+      enabled: true
+  endpoint:
+    health:
+      show-details: always
+logging:
+  config: classpath:logback.xml
+
+useragent:
+  value: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
